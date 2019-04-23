@@ -9,6 +9,12 @@ body
     width: 100%;
   }
 }
+@media only screen and (max-height:200px) {
+  /* For mobile phones: */
+  .container{
+    width: 100%;
+  }
+}
 
 .carousel-control.left{
 background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0) !important;
