@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!--CSS FROM WEB-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- Scripts FROM WEB-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container" style="width:375px; height:667px;">
+        <!--<h2>Carousel Example</h2>-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!--data-ride="carousel" automatic animation of slides-->
+            <!-- Indicators -->
+            <ol class="carousel-indicators" id="moran">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!--<img src="images/citrus.jpg" alt="Chicago" style="width:100%;">-->
+                    <div style="width:375px; height:667px; background-color:rosybrown"></div>
+                </div>
+
+                <div class="item">
+                    <div style="width:375px; height:667px; background-color:palevioletred"></div>
+                    <!--<img src="images/sunflower.jpg" alt="Los Angeles" style="width:100%;">-->
+                </div>
+
+
+
+                <div class="item">
+                    <!--<img src="images/aurora-borealis-wallpapers.jpg" alt="New york" style="width:100%;" />-->
+                    <div style="width:375px; height:667px; background-color:lightblue"></div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

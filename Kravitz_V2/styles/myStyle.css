@@ -1,0 +1,22 @@
+body 
+{
+    direction:rtl;
+}
+
+.carousel-control.left{
+background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0) !important;
+}
+.carousel-control.right{
+background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0) !important;
+}
+
+.carousel-indicators li{
+        width: 30px !important;
+    height: 30px !important;
+        border-radius: 15px !important;
+        margin:10px !important;
+}
+
+.carousel-indicators{
+                 -webkit-appearance: none !important;
+}
