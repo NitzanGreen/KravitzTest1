@@ -7,6 +7,8 @@ body
   /* For mobile phones: */
   .container{
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media only screen and (max-height:200px) {
