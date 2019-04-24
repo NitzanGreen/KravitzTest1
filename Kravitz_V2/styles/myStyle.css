@@ -34,10 +34,10 @@ background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0)
                  -webkit-appearance: none !important;
 }
 
-.carousel-inner .active {
+.carousel-inner .item {
     height: -webkit-fill-available;
 }
-.carousel-inner .active div{
+.carousel-inner .item div{
     height: -webkit-fill-available;
 }
 
