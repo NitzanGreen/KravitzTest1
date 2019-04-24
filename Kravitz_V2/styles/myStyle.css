@@ -26,10 +26,10 @@ background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0)
 }
 
 .carousel-indicators li{
-        width: 30px !important;
-    height: 30px !important;
+        width: 20px !important;
+    height: 20px !important;
         border-radius: 15px !important;
-        margin:10px !important;
+        margin:0px !important;
 }
 
 .carousel-indicators{
