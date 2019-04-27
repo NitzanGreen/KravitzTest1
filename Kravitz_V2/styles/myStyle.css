@@ -32,8 +32,18 @@ background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0)
         margin:10px !important;
 }
 
+#moran.carousel-indicators {
+    margin:auto;
+}
+
 .carousel-indicators{
                  -webkit-appearance: none !important;
+}
+
+.carousel-indicators ol {
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .carousel-inner .item {
@@ -42,4 +52,3 @@ background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0)
 .carousel-inner .item div{
     height: -webkit-fill-available;
 }
-
