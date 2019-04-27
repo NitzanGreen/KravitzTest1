@@ -1,5 +1,5 @@
-﻿<!doctype html>
-<html lang="">
+<!doctype html>
+<html lang="he">
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -8,7 +8,8 @@
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="theme-color" content="#ff6600" />
-    
+
+
     <!--CSS FROM WEB-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -25,13 +26,26 @@
     <!-- Scripts FROM WEB-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <!-- Scripts FROM WEB for SWIPE-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+    <script>
+$(document).on("pagecreate","#pageone",function(){
+  $("#elec").on("swipeleft",function(){
+    alert("You swiped left!");
+  });
+});
+    </script>
 
 </head>
+
 <body>
-    <div class="container" style="height: -webkit-fill-available;">
+    <div class="container" data-role="page" id="pageone">
         <!--<h2>Carousel Example</h2>-->
-        <div id="myCarousel" class="carousel slide" style="height: -webkit-fill-available;">
+        <div id="myCarousel" class="carousel slide">
             <!--data-ride="carousel" automatic animation of slides-->
             <!-- Indicators -->
             <ol class="carousel-indicators" id="moran">
@@ -41,32 +55,35 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" style="height: -webkit-fill-available;">
+            <div class="carousel-inner">
                 <div class="item active">
                     <!--<img src="images/citrus.jpg" alt="Chicago" style="width:100%;">-->
-                    <div style="width:100%; background-color:rosybrown"></div>
+                    <div style="width:100%; height:667px;  background-color:rosybrown" data-role="main" class="ui-content" id="elec">
+                        <h1>אלקטרוניקה</h1>
+                    </div>
+
                 </div>
 
                 <div class="item">
-                    <div style="width:100%;  background-color:palevioletred"></div>
+                    <div style="width:100%; height:667px; background-color:palevioletred"></div>
                     <!--<img src="images/sunflower.jpg" alt="Los Angeles" style="width:100%;">-->
                 </div>
 
                 <div class="item">
                     <!--<img src="images/aurora-borealis-wallpapers.jpg" alt="New york" style="width:100%;" />-->
-                    <div style="width:100%; background-color:lightblue"></div>
+                    <div style="width:100%; height:667px;  background-color:lightblue"></div>
                 </div>
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
-          </a> 
+            </a>-->
         </div>
     </div>
 </body>
