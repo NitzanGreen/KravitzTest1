@@ -81,7 +81,7 @@ $(document).ready(function () {
         $("#hi2").addClass("active");
         $("#hi").removeClass("active");
     });
-    $(".accordion.accordionOne").click(function () {console.log("click");var next = document.getElementsByClassName("accordion accordionOne active")[0];console.log(next); if(next) setTimeout(function(){next.scrollIntoView()},100)})
+    $(".accordion.accordionOne").click(function () {var next = document.getElementsByClassName("accordion accordionOne active")[0]; if(next) setTimeout(function(){next.scrollIntoView()},100)})
 });
 
 //var acc = document.getElementsByClassName("accordion");
