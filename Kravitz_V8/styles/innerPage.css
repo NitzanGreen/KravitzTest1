@@ -1,0 +1,160 @@
+body {
+    /*dev
+	//height:2000px;*/
+    padding: 10px;
+    padding-bottom: 50px;
+    direction: rtl;
+}
+
+h1 {
+    margin-top: 24px;
+    font-size: 1.5rem !important;
+}
+
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /*give nav it's own compsite layer*/
+    will-change: transform;
+    transform: translateZ(0);
+    display: flex;
+    height: 50px;
+    box-shadow: 0 -2px 5px -2px #333;
+    background-color: #fff;
+}
+
+.mobile-bottom-nav__item {
+    color: black;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-bottom-nav__item--active {
+    /*//dev*/
+    background-color: darkorange;
+    color:black;
+        flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-bottom-nav__item-content {
+    display: flex;
+    flex-direction: column;
+}
+a:hover {
+    color:black;
+    text-decoration:none;   
+}
+
+
+.accordion {
+    /*background-color: #eee;*/
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    transition: 0.4s;
+}
+
+  
+.accordionOne {
+    background-color: #eee;
+    padding: 13px;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+        border-radius: 6px;
+}
+
+.accordionTwo {
+    background-color: #eee;
+padding: 10px;
+font-size: 20px;
+}
+
+.icons {
+    height:45px;
+    width: 45px;
+    margin-left: 5px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    /*padding: 0 18px;*/
+    /*margin-bottom: 5px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height 0.2s ease-out;
+}
+
+.panelInner {
+    margin-top:2.5px;
+    margin-bottom: 2.5px;
+        padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height 0.2s ease-out;
+}
+
+button:focus {
+    outline: 2px none darkorange !important;
+        border-radius: 6px !important;
+}
+
+.panelInner p{
+    margin-top:5px;
+
+}
+#notice{
+    border: 2px solid aqua;
+    padding: 0px 12px;
+}
+
+.moran {
+    margin: 5px 10px 0px 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#q2{
+        background-color: #eb6d4a;
+    margin-left: auto;
+    margin-right: auto;
+        margin-top: 10px;
+}
+
+#arrowBack{
+    color:#8c8c8c;
+}
