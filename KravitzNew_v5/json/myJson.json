@@ -1,0 +1,35 @@
+﻿{
+  "project": {
+    "ProductExplanationHelpPart": {
+      "ProductExplanation1": "הסבר תכני על מחשבים",
+      "ProductExplanation2": "הסבר תכני על מדפסות",
+      "ProductExplanation3": "הסבר תכני על גיימינג",
+      "ProductExplanation4": "הסבר תכני על זכרונות"
+    },
+    "hetzimAccordionLaptop": {
+      "step1": "טקסט שלב ראשון- מחשבים",
+      "step2": "שלב שני- מחשבים",
+      "step3": "שלב שלישי- מחשבים",
+      "step4": "שלב רביעי- מחשבים"
+    },
+    "hetzimAccordionPrinter": {
+      "step1": "טקסט שלב ראשון-מדפסות",
+      "step2": "שלב שני- מדפסות",
+      "step3": "שלב שלישי- מדפסות",
+      "step4": "שלב רביעי- מדפסות"
+    },
+    "hetzimAccordionGaming": {
+      "step1": "טקסט שלב ראשון- גיימינג",
+      "step2": "שלב שני- גיימינג",
+      "step3": "שלב שלישי- גיימינג",
+      "step4": "שלב רביעי- גיימינג"
+    },
+        "hetzimAccordionMemo": {
+      "step1": "טקסט שלב ראשון- זכרונות",
+      "step2": "שלב שני- זכרונות",
+      "step3": "שלב שלישי- זכרונות",
+      "step4": "שלב רביעי- זכרונות"
+    }
+  }
+}
+
