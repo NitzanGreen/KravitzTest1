@@ -39,6 +39,9 @@ $(document).ready(function () {
         
     //})
 });
+
+
+
 function initAccordion() {
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -176,6 +179,7 @@ $(document).ready(function () {
         $("#helpTab").show();
         $(this).css("background-color", "#178a8d");
         $("#helpTabPart2n3").hide();
+        (function (next) { setTimeout(function () { next.scrollIntoView(); }, 100) }(document.getElementById("helpTabPart1")))
     });
 
    //לחיצה על אייקונים ב"איזה מוצר בא לך להכיר?"
@@ -202,6 +206,7 @@ function setJsonToHtml() {
         async: false,
         success: function (data) {
 
+            // מוצרים של "אפשר עזרה"
             $("#tab1").click(function () {
                 $("#helpTabPart2n3").show();
                 document.getElementById("ProductExplanationHelpPart").innerHTML = data.project.ProductExplanationHelpPart.ProductExplanation1;
@@ -211,9 +216,8 @@ function setJsonToHtml() {
                 document.getElementById("txt4").innerHTML = data.project.hetzimAccordionLaptop.step4;
             });
 
-            $("#tab2").click(function () {
+            $("#tab2").click(function () { 
                 $("#helpTabPart2n3").show();
-                document.getElementById("ProductExplanationHelpPart").innerHTML = data.project.ProductExplanationHelpPart.ProductExplanation2;
                 document.getElementById("ProductExplanationHelpPart").innerHTML = data.project.ProductExplanationHelpPart.ProductExplanation2;
                 document.getElementById("txt1").innerHTML = data.project.hetzimAccordionPrinter.step1;
                 document.getElementById("txt2").innerHTML = data.project.hetzimAccordionPrinter.step2;
@@ -238,6 +242,10 @@ function setJsonToHtml() {
                 document.getElementById("txt3").innerHTML = data.project.hetzimAccordionMemo.step3;
                 document.getElementById("txt4").innerHTML = data.project.hetzimAccordionMemo.step4;
             });
+
+            $("#tab1,#tab2,#tab3,#tab4").click(function () {
+                (function (next) { setTimeout(function () { next.scrollIntoView(); }, 100) }(document.getElementById("helpTab")))
+            })
         }
     });
 }
