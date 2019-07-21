@@ -201,7 +201,7 @@ $(document).ready(function () {
 
 function setJsonToHtml() {
     $.ajax({
-        url: '/json/myJson.json',
+        url: 'KravitzTest1/KravitzNew_v5/json/myJson.json',
         dataType: 'json',
         async: false,
         success: function (data) {
